@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "ProcessarProposta.Worker": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "production",
+        "DOTNET_ENVIRONMENT": "production"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -1,8 +1,4 @@
-﻿using SEG.Core.Enum;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Core.Enum;
 
 namespace Catalogo.API.DTO
 {

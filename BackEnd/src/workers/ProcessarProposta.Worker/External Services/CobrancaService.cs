@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Options;
 using ProcessarProposta.Worker.DTOs;
 using ProcessarProposta.Worker.Extensions;
-using SEG.Core.Communication;
+using Core.Communication;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;

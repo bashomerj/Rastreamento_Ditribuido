@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using SEG.Core.Mediator;
-using SEG.Email;
+using Core.Mediator;
+using Email;
 using Catalogo.API.Data.Repositories;
 using Catalogo.API.Extensions;
 using Catalogo.API.Models.Repositories;
 using Catalogo.API.Services;
-using SEG.WebAPI.Core.Usuario;
+using WebAPI.Core.Usuario;
 
 namespace Catalogo.API.Configuration
 {

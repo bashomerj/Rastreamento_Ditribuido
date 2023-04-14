@@ -1,5 +1,5 @@
-﻿using SEG.Core.Messages.Integration;
-using SEG.Email;
+﻿using Core.Messages.Integration;
+using Email;
 using System;
 using System.Collections.Generic;
 using System.Text;

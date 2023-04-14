@@ -1,4 +1,4 @@
-﻿using SEG.Core.Enum;
+﻿using Core.Enum;
 using System;
 using System.Collections.Generic;
 using System.Text;

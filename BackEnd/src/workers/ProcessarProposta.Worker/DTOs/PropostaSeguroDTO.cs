@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
-using SEG.Core.Enum;
+using Core.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -481,7 +481,7 @@ namespace ProcessarProposta.Worker.DTOs
             if (string.IsNullOrEmpty(cpf))
                 return true;
 
-            return SEG.Core.DomainObjects.Cpf.Validar(cpf);
+            return Core.DomainObjects.Cpf.Validar(cpf);
         }
       
         protected static bool TerPercentualParticipacaoValido(List<BeneficiarioDTO> beneficiarios)

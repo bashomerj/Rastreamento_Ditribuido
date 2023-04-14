@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="contrato_nao_encontrato" xml:space="preserve">
+    <value>Contrato {0} não encontrado</value>
+  </data>
+  <data name="contrato_nao_vida_individual" xml:space="preserve">
+    <value>Contrato {0} não é do tipo VI</value>
+  </data>
+  <data name="contrato_nao_habilitado_comercializacao" xml:space="preserve">
+    <value>Contrato {0} não está habilitado para comercialização</value>
+  </data>
+  <data name="contrato_nao_pertence_empresa_sucursal" xml:space="preserve">
+    <value>Contrato {0} não pertence a empresa e/ou sucursal informada</value>
+  </data>
+  <data name="contrato_inativo" xml:space="preserve">
+    <value>Contrato {0} não está ativo</value>
+  </data>
+  <data name="contrato_nao_vigente" xml:space="preserve">
+    <value>Contrato {0} não está vigente</value>
+  </data>
+  <data name="proposta_nao_preenchida" xml:space="preserve">
+    <value>Proposta não informada</value>
+  </data>
+  <data name="contrato_nao_preenchido" xml:space="preserve">
+    <value>Contrato não informado</value>
+  </data>
+  <data name="sucursal_nao_preenchida" xml:space="preserve">
+    <value>Sucursal não informada</value>
+  </data>
+  <data name="proposta_nao_liberada_comercializacao" xml:space="preserve">
+    <value>Proposta não existe e/ou não está liberada para comercialização</value>
+  </data>
+  <data name="endereco_cobranca_nao_informado" xml:space="preserve">
+    <value>Endereço de cobrança não informado!</value>
+  </data>
+  <data name="uf_nao__habilitada_venda" xml:space="preserve">
+    <value>A UF {0} não esta habilitada para venda</value>
+  </data>
+  <data name="agrupamento_nao_encontrado" xml:space="preserve">
+    <value>Agrupamento não encontrado</value>
+  </data>
+  <data name="agrupamento_inativo" xml:space="preserve">
+    <value>Agrupamento informado não está ativo</value>
+  </data>
+  <data name="data_nascimento_menor_data_base" xml:space="preserve">
+    <value>Data base não pode ser maior do que a data de nascimento</value>
+  </data>
+  <data name="idade_fora_limite_aceitacao" xml:space="preserve">
+    <value>Idade do segurado está fora do limite de aceitação do agrupamento</value>
+  </data>
+  <data name="titular_cobertura_nao_informada" xml:space="preserve">
+    <value>Nenhuma cobertura informada para o titular</value>
+  </data>
+  <data name="cobertura_is_negativo" xml:space="preserve">
+    <value>Cobertura {0} com valor de IS negativo</value>
+  </data>
+  <data name="motivo_venda_administrativa_nao_encontrato" xml:space="preserve">
+    <value>Motivo da venda administrativa não foi encontrado</value>
+  </data>
+  <data name="certificado_original_venda_administrativa_nao_informado" xml:space="preserve">
+    <value>CertificadoOriginal da venda administrativa não foi informado</value>
+  </data>
+  <data name="contrato_original_venda_administrativa_nao_informado" xml:space="preserve">
+    <value>ContratoOriginal da venda administrativa não foi informado</value>
+  </data>
+  <data name="contrato_original_venda_administrativa_nao_encontrato" xml:space="preserve">
+    <value>ContratoOriginal da venda administrativa não encontrado</value>
+  </data>
+  <data name="certificado_original_venda_administrativa_nao_encontrato" xml:space="preserve">
+    <value>Certificado orignal {0}/{1}não encontrado</value>
+  </data>
+  <data name="certificado_original_venda_administrativa_nao_cancelado" xml:space="preserve">
+    <value>O certificado original {0}/{1} não está cancelado.</value>
+  </data>
+  <data name="certificado_original_venda_administrativa_nao_pertence_titular" xml:space="preserve">
+    <value>O certificado original {0}/{1} não pertence a um titular.</value>
+  </data>
+  <data name="colaborador_nao_informado" xml:space="preserve">
+    <value>Colaborador não informado</value>
+  </data>
+  <data name="colaborador_nao_encontrado" xml:space="preserve">
+    <value>Colaborador não encontrato</value>
+  </data>
+  <data name="colaborador_inativo" xml:space="preserve">
+    <value>Colaborador inativo</value>
+  </data>
+  <data name="empresa_nao_informada" xml:space="preserve">
+    <value>Empresa não informada</value>
+  </data>
+  <data name="proposta_processada_anteriormente" xml:space="preserve">
+    <value>A proposta informada já foi processada anteriormente e existe um certificado vinculado. Contrato: {0} - Certificado: {1}</value>
+  </data>
+  <data name="proposta_recusada_nao_marcada_redigitacao" xml:space="preserve">
+    <value>A proposta informada está recusada mas não está marcada para redigitação. Para redigitar a proposta a mesma precisa ter sido recusada para redigitação.</value>
+  </data>
+  <data name="cpf_igual_segurados" xml:space="preserve">
+    <value>CPF {0} foi enviando igual para dois segurados</value>
+  </data>
+  <data name="estado_civil_obrigadorio" xml:space="preserve">
+    <value>O estado civil do {0} {1} é obrigatório</value>
+  </data>
+  <data name="nome_nao_informado" xml:space="preserve">
+    <value>O nome do {0} {1} não foi informado</value>
+  </data>
+  <data name="nome_fora_limite_caracter" xml:space="preserve">
+    <value>O Nome do {0} {1} não pode ter menos do que 5 caracteres e mais do que 40 caracteres</value>
+  </data>
+  <data name="nome_caracter_especial" xml:space="preserve">
+    <value>O Nome do {0} {1} não pode conter caracteres especiais</value>
+  </data>
+  <data name="data_nascimento_nao_informada" xml:space="preserve">
+    <value>A data de nascimento do {0} {1} não foi informada</value>
+  </data>
+  <data name="data_nascimento_maior_data_atual" xml:space="preserve">
+    <value>A data de nascimento do {0} {1} não pode ser maior do que data Atual</value>
+  </data>
+  <data name="data_nascimento_maior_vigencia_seguro" xml:space="preserve">
+    <value>A data de nascimento do {0} {1} não pode ser maior do que data de vigência do seguro</value>
+  </data>
+  <data name="email_invalido" xml:space="preserve">
+    <value>Email do titular {0} inválido</value>
+  </data>
+  <data name="renda_menor_zero" xml:space="preserve">
+    <value>A renda do {0} {1} não pode ser menor do que zero</value>
+  </data>
+  <data name="cpf_cadastrado_como_proprio_existente" xml:space="preserve">
+    <value>Já existe uma pessoa cadastrada com o CPF {0} marcado como próprio. Somente é permitido uma pessoa com a marcação de CPF próprio</value>
+  </data>
+  <data name="rg_cadastrado_para_outro_segurado" xml:space="preserve">
+    <value>Já existe uma pessoa cadastrada com o RG {0}. Somente é permitido uma pessoa por RG</value>
+  </data>
+  <data name="celular_whatsapp_marcado_somente_um" xml:space="preserve">
+    <value>Somente um celular pode estar marcada como whatsapp</value>
+  </data>
+  <data name="celular_principal_marcado_somente_um" xml:space="preserve">
+    <value>Somente um telefone pode estar marcado como principal</value>
+  </data>
+  <data name="telefone_marcado_whatsapp_nao_celular" xml:space="preserve">
+    <value>Somente celular pode estar marcado como whatsapp</value>
+  </data>
+  <data name="celular_mais_do_que_um_informado_como_principal" xml:space="preserve">
+    <value>Foi informando mais do que um celular e nenhum está marcado como principal</value>
+  </data>
+  <data name="ddd_nao_informado" xml:space="preserve">
+    <value>DDD do telefone do {0} não foi informado</value>
+  </data>
+  <data name="ddd_invalido" xml:space="preserve">
+    <value>DDD do telefone do {0} está inválido inválido</value>
+  </data>
+  <data name="telefone_nao_informado" xml:space="preserve">
+    <value>Numero telefone não informado</value>
+  </data>
+  <data name="celular_invalido" xml:space="preserve">
+    <value>Celular {0} está com um número inválido. Verificar se está começando com 9 e se possui 9 dígitos</value>
+  </data>
+  <data name="telefone_marcado_principal_nao_celular" xml:space="preserve">
+    <value>Telefone {0} não é celular e está marcado como principal. Somente telefone tipo celular pode ser marcado como principal</value>
+  </data>
+  <data name="telefone_marcado_sms_nao_celular" xml:space="preserve">
+    <value>Telefone {0} não é celular e está marcado para receber SMS. Somente telefone tipo celular pode ser marcado para receber SMS</value>
+  </data>
+  <data name="telefone_nao_celuluar_marcado_principal " xml:space="preserve">
+    <value>{0} Telefone {1} não é celular principal e está marcado para receber SMS. Somente celular principal pode ser marcado para receber SMS</value>
+  </data>
+  <data name="telefone_nao_celuluar_marcado_whatsapp" xml:space="preserve">
+    <value>Telefone {0} não é celular e está marcado para receber Whatsapp. Somente telefone tipo celular pode ser marcado para receber Whatsapp</value>
+  </data>
+  <data name="telefone_nao_celuluar_principal_marcado_whatsapp" xml:space="preserve">
+    <value>Telefone {0} não é celular principal e está marcado para receber Whatsapp. Somente celular principal pode ser marcado para receber Whatsapp</value>
+  </data>
+  <data name="rg_nao_informado" xml:space="preserve">
+    <value>O RG do {0} {1} não foi informado e o seu preenchimento é obrigatório</value>
+  </data>
+  <data name="orgao_expedidor_rg_nao_informado" xml:space="preserve">
+    <value>O órgão expedidor do RG do {0} {1} não foi informado</value>
+  </data>
+  <data name="orgao_expedidor_rg_caracter_especial" xml:space="preserve">
+    <value>O órgão expedidor do {0} {1} não pode conter caracteres especiais</value>
+  </data>
+  <data name="data_expedicao_rg_nao_informada" xml:space="preserve">
+    <value>A data do órgão expedidor do RG do {0} {1} não foi informado</value>
+  </data>
+  <data name="data_expedicao_rg_menor_nascimento" xml:space="preserve">
+    <value>A data de expedição do RG tem que ser maior ou igual a data de nascimento do {0} {1}</value>
+  </data>
+  <data name="data_expedicao_rg_menor_data_atual" xml:space="preserve">
+    <value>A data de expedição do RG tem que ser menor ou igual a data atual</value>
+  </data>
+  <data name="titular_cpf_proprio_obrigatorio" xml:space="preserve">
+    <value>O titular sempre precisa ter CPF próprio</value>
+  </data>
+  <data name="cpf_nao_informado" xml:space="preserve">
+    <value>CPF do beneficiário {0} não informado</value>
+  </data>
+  <data name="cpf_invalido" xml:space="preserve">
+    <value>CPF do beneficiário {0} inválido</value>
+  </data>
+  <data name="endereco_nao_informado" xml:space="preserve">
+    <value>Endereço não informado</value>
+  </data>
+  <data name="cep_nao_informado" xml:space="preserve">
+    <value>Cep não informado</value>
+  </data>
+  <data name="logradouro_nao_informado" xml:space="preserve">
+    <value>Logradouro não informado</value>
+  </data>
+  <data name="endereco_caracter_especial" xml:space="preserve">
+    <value>Não é permitido o uso de caracteres especiais no preenchimento do endereço</value>
+  </data>
+  <data name="cidade_nao_informado" xml:space="preserve">
+    <value>Cidade do endereço não informada</value>
+  </data>
+  <data name="cidade_caracter_especial" xml:space="preserve">
+    <value>Não é permitido o uso de caracteres especiais no preenchimento do cidade</value>
+  </data>
+  <data name="uf_nao_informado" xml:space="preserve">
+    <value>UF do endereço não informado</value>
+  </data>
+  <data name="uf_caracter_especial" xml:space="preserve">
+    <value>Não é permitido o uso de caracteres especiais no preenchimento da UF</value>
+  </data>
+  <data name="complemento_caracter_especial" xml:space="preserve">
+    <value>Não é permitido o uso de caracteres especiais no preenchimento do complemento do endereço</value>
+  </data>
+  <data name="referencia_caracter_especial" xml:space="preserve">
+    <value>Não é permitido o uso de caracteres especiais no preenchimento da referência do endereço</value>
+  </data>
+  <data name="cpf_vinculado_colaborador_ativo" xml:space="preserve">
+    <value>O CPF {0} do titular está vinculado a um colaborador ativo. Não é permitido comercialização de seguro para colaboradores.</value>
+  </data>
+  <data name="cpf_outra_pessoa_cadastrada" xml:space="preserve">
+    <value>Não é possível cadastrar o segurado. Já existe outra pessoa cadastrada para esse CPF {0}</value>
+  </data>
+  <data name="percentual_participacao_nao_informado" xml:space="preserve">
+    <value>O percentual de participacao do beneficiário {0} não foi informado</value>
+  </data>
+  <data name="percentual_participacao_menor_igual_zero" xml:space="preserve">
+    <value>O percentual de participacao do beneficiário {0} não pode ser menor ou igual a 0%</value>
+  </data>
+  <data name="percentual_participacao_maior_cem" xml:space="preserve">
+    <value>O percentual de participacao do beneficiário {0} não pode ser maior do que 100%</value>
+  </data>
+  <data name="nome_beneficiario_nao_informado" xml:space="preserve">
+    <value>O nome do beneficiário não informado</value>
+  </data>
+  <data name="nome_beneficiario_limite_caracter" xml:space="preserve">
+    <value>O Nome do beneficiário {0} não pode ter menos do que 5 caracteres e mais do que 40 caracteres</value>
+  </data>
+  <data name="nome_beneficiario_caracter_especial" xml:space="preserve">
+    <value>O Nome do beneficiário {0} não pode conter caracteres especiais</value>
+  </data>
+  <data name="sexo_beneficiario_nao_informado" xml:space="preserve">
+    <value>O sexo do beneficiário {0} não foi informado</value>
+  </data>
+  <data name="data_nascimento_beneficiario_nao_informada" xml:space="preserve">
+    <value>A data de nascimento do beneficiário {0} não foi informada</value>
+  </data>
+  <data name="data_nascimento_beneficiario_maior_data_atual" xml:space="preserve">
+    <value>A data de nascimento do beneficiário {0} não pode ser maior do que data Atual</value>
+  </data>
+  <data name="tipo_telefone_nao_informado" xml:space="preserve">
+    <value>Tipo do telefone do telefone {0} não foi informado</value>
+  </data>
+  <data name="produto_plano_nao_informado" xml:space="preserve">
+    <value>Produto do plano não informado</value>
+  </data>
+  <data name="sequencial_plano_nao_informado" xml:space="preserve">
+    <value>Sequencial do plano não informado</value>
+  </data>
+  <data name="vigencia_plano_nao_informada" xml:space="preserve">
+    <value>Data da vigência do plano não informada</value>
+  </data>
+  <data name="cobertura_contratada_nao_informada" xml:space="preserve">
+    <value>Não foi informada nenhuma cobertura contratada</value>
+  </data>
+  <data name="codigo_cobertura_nao_informado" xml:space="preserve">
+    <value>código da cobertura não informado</value>
+  </data>
+  <data name="is_cobertura_negativo" xml:space="preserve">
+    <value>cobertura {0} está com valor de IS negativo</value>
+  </data>
+  <data name="plano_informado_nao_encontrato" xml:space="preserve">
+    <value>Plano informado {0}|{1}|{2} não foi encontrado</value>
+  </data>
+  <data name="plano_informado_nao_disponivel_tipo_segurado" xml:space="preserve">
+    <value>Plano informado {0}|{1}|{2} não é disponível para o tipo de segurado {tipoSeguradoInformado.Ds_sgncam}</value>
+  </data>
+  <data name="plano_informado_nao_disponivel_sexo_segurado" xml:space="preserve">
+    <value>Plano informado {0}|{1}|{2} não é disponível para o sexo do segurado {sexoInformado.Ds_sgncam}</value>
+  </data>
+  <data name="cobertura_nao_informada" xml:space="preserve">
+    <value>Nenhuma cobertura foi informada</value>
+  </data>
+  <data name="sem_cobertura_parametrizada_para_plano" xml:space="preserve">
+    <value>Não existe nenhuma cobertura parametrizada para esse plano {0}|{1}|{2}</value>
+  </data>
+  <data name="cobertura_informada_nao_conta_plano" xml:space="preserve">
+    <value>Cobertura {0} informada não consta na lista de coberturas disponíveis no plano {1}|{2}|{3}</value>
+  </data>
+  <data name="cobertura_basica_nao_informada_ou_zerada" xml:space="preserve">
+    <value>A Cobertura básica {0} do plano {1}|{2}|{3} não foi informada ou está com valor zerado</value>
+  </data>
+  <data name="cobertura_adicional_nao_informada_ou_zerada" xml:space="preserve">
+    <value>A Cobertura adicional {0} do plano {1}|{2}|{3} não foi informada ou está com valor zerado</value>
+  </data>
+  <data name="cobertura_especial_nao_informada_ou_zerada" xml:space="preserve">
+    <value>A Cobertura especial {0} do plano {1}|{2}|{3} não foi informada ou está com valor zerado</value>
+  </data>
+  <data name="plano_sem_cobertura_basica" xml:space="preserve">
+    <value>Plano {0}|{1}|{2} configurado sem cobertura básica e com cobertura adicional. Favor informar a Sinaf Seguros sobre o problema</value>
+  </data>
+  <data name="cobertura_nao_parametrizada_plano" xml:space="preserve">
+    <value>Cobertura {0} não está parametrizada para esse plano {1}|{2}|{3}</value>
+  </data>
+  <data name="coberuta_nao_comercializada_tipo_segurado" xml:space="preserve">
+    <value>Cobertura {0} não pode ser comercializada para o tipo de segurado informado.</value>
+  </data>
+  <data name="cobertura_fora_limite_is_para_faixa_etaria" xml:space="preserve">
+    <value>Cobertura {0} está com o valor de IS fora do limite de aceitação da cobertura para a faixa etária. Valor mínino: {1} | Valor máximo: {2}</value>
+  </data>
+  <data name="cobertura_divergencia_valor_informado_valor_calculado" xml:space="preserve">
+    <value>A Cobertura {0} está apresentando divergência de valor de IS em relação ao calculado pelo sistema. IS informada R$ {1} - IS calculada R$ {2}</value>
+  </data>
+  <data name="dps_nao_parametrizada_para_produto" xml:space="preserve">
+    <value>Parametrização de DPS não realizada para o produto. Favor verificar o cadastro da DPS no produto</value>
+  </data>
+  <data name="dps_nehuma_pergunta_respondida" xml:space="preserve">
+    <value>nenhuma pergunta da DPS foi respondida para o segurado {0}</value>
+  </data>
+  <data name="dps_pergunta_sem_resposta" xml:space="preserve">
+    <value>A pergunta {0} está sem resposta</value>
+  </data>
+  <data name="dps_pergunta_duplicada" xml:space="preserve">
+    <value>A pergunta {0} está duplicada</value>
+  </data>
+  <data name="dps_pergunta_faltando_dps_enviada" xml:space="preserve">
+    <value>A pergunta {0} está faltando na DPS enviada</value>
+  </data>
+  <data name="dps_resposta_pergunta_invalida" xml:space="preserve">
+    <value>A resposta {0} da pergunta {1} não é uma resposta válida</value>
+  </data>
+  <data name="dps_resposta_pergunta_nao_permite_complemento" xml:space="preserve">
+    <value>A resposta {0} da pergunta {1} não permite complemento de resposta</value>
+  </data>
+  <data name="dps_pergunta_nao_parametrizada_produto" xml:space="preserve">
+    <value>A pergunta {0} não está na parametrização da DPS do produto</value>
+  </data>
+  <data name="meio_cobranca_nao_informada" xml:space="preserve">
+    <value>informação de meio de pagamento não informada</value>
+  </data>
+  <data name="proposta_meio_pagamento_nao_informada" xml:space="preserve">
+    <value>proposta do meio de pagamento não informada</value>
+  </data>
+  <data name="agencia_conta_debito_nao_infomada" xml:space="preserve">
+    <value>Agência do meio de pagamento débito automático não informada</value>
+  </data>
+  <data name="digito_agencia_conta_debito_nao_informada" xml:space="preserve">
+    <value>Dígito da agência do meio de pagamento débito automático não informada</value>
+  </data>
+  <data name="conta_debito_nao_informada" xml:space="preserve">
+    <value>Conta do meio de pagamento débito automático não informada</value>
+  </data>
+  <data name="digito_conta_debito_nao_informada" xml:space="preserve">
+    <value>Dígito da conta do meio de pagamento débito automático não informada</value>
+  </data>
+  <data name="tipo_conta_debito_nao_informado" xml:space="preserve">
+    <value>Tipo da conta do meio de pagamento débito automático não informado</value>
+  </data>
+  <data name="categoria_conta_debito_nao_informada" xml:space="preserve">
+    <value>Categoria da conta do meio de pagamento débito automático não informada</value>
+  </data>
+  <data name="nome_titular_conta_debito_nao_informado" xml:space="preserve">
+    <value>Nome do titular da conta do meio de pagamento débito automático não informado</value>
+  </data>
+  <data name="cpf_titular_conta_debito_nao_informado" xml:space="preserve">
+    <value>CPF do titular da conta do meio de pagamento débito automático não informado</value>
+  </data>
+  <data name="cpf_titular_conta_debito_invalido" xml:space="preserve">
+    <value>CPF do titular da conta do meio de pagamento débito automático inválido</value>
+  </data>
+</root>

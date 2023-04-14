@@ -3,8 +3,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Cliente.API.Data;
 using Cliente.API.Models.Repositories;
 using Cliente.API.Services;
-using SEG.Core.Mediator;
-using SEG.WebAPI.Core.Usuario;
+using Core.Mediator;
+using WebAPI.Core.Usuario;
 
 namespace Cliente.API.Configuration
 {

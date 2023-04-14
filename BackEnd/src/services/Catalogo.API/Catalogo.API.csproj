@@ -41,10 +41,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\building blocks\SEG.Core\SEG.Core.csproj" />
-    <ProjectReference Include="..\..\building blocks\SEG.Email\SEG.Email.csproj" />
-    <ProjectReference Include="..\..\building blocks\SEG.MessageBus\SEG.MessageBus.csproj" />
-    <ProjectReference Include="..\..\building blocks\SEG.WebAPI.Core\SEG.WebAPI.Core.csproj" />
+    <ProjectReference Include="..\..\building blocks\Email\Email.csproj" />
+    <ProjectReference Include="..\..\building blocks\MessageBus\MessageBus.csproj" />
+    <ProjectReference Include="..\..\building blocks\WebAPI.Core\WebAPI.Core.csproj" />
   </ItemGroup>
 
 

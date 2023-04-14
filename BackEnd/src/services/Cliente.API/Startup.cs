@@ -67,9 +67,9 @@ namespace Cliente.API
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.ConfigureGlobalErroHandler();
-
             services.AddApiConfiguration(Configuration);
+
+            services.ConfigureGlobalErroHandler();
 
             //services.AddJwtConfiguration(Configuration);
 

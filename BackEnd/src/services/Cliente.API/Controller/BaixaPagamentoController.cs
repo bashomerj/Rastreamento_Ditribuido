@@ -2,8 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Cliente.API.DTO;
 using Cliente.API.Services;
-using SEG.Core.Mediator;
-using SEG.WebAPI.Core.Controllers;
+using Core.Mediator;
+using WebAPI.Core.Controllers;
 using System.Threading.Tasks;
 
 namespace Cliente.API.Controller

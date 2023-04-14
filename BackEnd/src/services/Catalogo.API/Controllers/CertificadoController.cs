@@ -1,9 +1,9 @@
 ﻿using EasyNetQ.LightInject;
 using Microsoft.AspNetCore.Mvc;
-using SEG.Core.Utils;
+using Core.Utils;
 using Catalogo.API.DTO;
 using Catalogo.API.Models.Repositories;
-using SEG.WebAPI.Core.Controllers;
+using WebAPI.Core.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;

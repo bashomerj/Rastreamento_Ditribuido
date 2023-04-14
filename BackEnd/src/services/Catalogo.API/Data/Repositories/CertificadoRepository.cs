@@ -1,12 +1,6 @@
-﻿using SEG.Core.Data;
-using Catalogo.API.Data;
-using Catalogo.API.Models.Entities;
-using Catalogo.API.Models.Interfaces;
+﻿using Catalogo.API.Models.Entities;
 using Catalogo.API.Models.Repositories;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using System.Linq;
+using Core.Data;
 
 namespace Catalogo.API.Data.Repositories
 {

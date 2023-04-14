@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SEG.Core.Utils;
-using SEG.MessageBus;
+using Core.Utils;
+using MessageBus;
 
 namespace Cliente.API.Configuration
 {

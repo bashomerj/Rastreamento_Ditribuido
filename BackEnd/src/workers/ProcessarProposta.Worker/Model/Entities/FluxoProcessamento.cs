@@ -2,7 +2,7 @@
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Schema;
 using SEG.Cobranca.API.Models.Interfaces;
-using SEG.Core.DomainObjects;
+using Core.DomainObjects;
 using System;
 
 namespace ProcessarProposta.Worker.Model.Entities

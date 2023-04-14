@@ -1,9 +1,9 @@
 ﻿using FluentValidation.Results;
 using Microsoft.EntityFrameworkCore;
-using SEG.Core.Data;
-using SEG.Core.DomainObjects;
-using SEG.Core.Mediator;
-using SEG.Core.Messages;
+using Core.Data;
+using Core.DomainObjects;
+using Core.Mediator;
+using Core.Messages;
 using Catalogo.API.Models.Entities;
 using System;
 using System.Linq;

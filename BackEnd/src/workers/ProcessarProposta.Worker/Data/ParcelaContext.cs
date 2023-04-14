@@ -1,10 +1,10 @@
 ﻿using FluentValidation.Results;
 using Microsoft.EntityFrameworkCore;
 using ProcessarProposta.Worker.Model.Entities;
-using SEG.Core.Data;
-using SEG.Core.DomainObjects;
-using SEG.Core.Mediator;
-using SEG.Core.Messages;
+using Core.Data;
+using Core.DomainObjects;
+using Core.Mediator;
+using Core.Messages;
 using System;
 using System.Linq;
 using System.Threading.Tasks;

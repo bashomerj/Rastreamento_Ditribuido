@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
-using SEG.Core.Enum;
-using SEG.Core.Messages;
+using Core.Enum;
+using Core.Messages;
 using Catalogo.API.DTO;
 using Catalogo.API.Models.Entities;
 using System;

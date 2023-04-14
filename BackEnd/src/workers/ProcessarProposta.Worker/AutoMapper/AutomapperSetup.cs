@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using SEG.Core.Messages.Integration;
+using Core.Messages.Integration;
 
 namespace ProcessarProposta.Worker.AutoMapper
 {

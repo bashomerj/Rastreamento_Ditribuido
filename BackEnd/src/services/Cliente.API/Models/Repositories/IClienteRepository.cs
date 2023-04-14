@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using SEG.Core.Data;
+using Core.Data;
 using Cliente.API.Models.Entities;
 using Cliente.API.Models.Interfaces;
 

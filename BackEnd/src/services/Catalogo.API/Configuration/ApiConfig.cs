@@ -5,11 +5,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using SEG.Email;
+using Email;
 using Catalogo.API.Automapper;
 using Catalogo.API.Data;
 using Catalogo.API.Extensions;
-using SEG.WebAPI.Core.Identidade;
+using WebAPI.Core.Identidade;
 
 namespace Catalogo.API.Configuration
 {
@@ -46,7 +46,7 @@ namespace Catalogo.API.Configuration
 
         public static void UseApiConfiguration(this IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
-            if (env.IsDevelopment())app.UseDeveloperExceptionPage();
+            if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
             else app.UseGlobalErroHandler(loggerFactory);
 
             app.UseHttpsRedirection();

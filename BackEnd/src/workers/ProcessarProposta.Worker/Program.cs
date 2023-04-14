@@ -9,10 +9,10 @@ using ProcessarProposta.Worker.External_Services;
 using ProcessarProposta.Worker.Services;
 using SEG.Cobranca.API.Data;
 using SEG.Cobranca.API.Models.Repositories;
-using SEG.Core.Mediator;
-using SEG.Core.Utils;
-using SEG.Email;
-using SEG.MessageBus;
+using Core.Mediator;
+using Core.Utils;
+using Email;
+using MessageBus;
 
 
 namespace ProcessarProposta.Worker

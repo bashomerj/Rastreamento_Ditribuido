@@ -1,5 +1,5 @@
 ﻿using FluentValidation.Results;
-using SEG.Core.Messages.Integration;
+using Core.Messages.Integration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 
 using Microsoft.AspNetCore.Mvc;
-using SEG.Core.Mediator;
-using SEG.WebAPI.Core.Controllers;
-using SEG.WebAPI.Core.Usuario;
-using SEG.Core.Enum;
+using Core.Mediator;
+using WebAPI.Core.Controllers;
+using WebAPI.Core.Usuario;
+using Core.Enum;
 using Cliente.API.Models.Repositories;
 using Cliente.API.Services;
 

@@ -1,5 +1,5 @@
 ﻿using Cliente.API.Models.Interfaces;
-using SEG.Core.DomainObjects;
+using Core.DomainObjects;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

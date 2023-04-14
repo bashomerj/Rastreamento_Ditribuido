@@ -7,8 +7,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Cliente.API.Automapper;
 using Cliente.API.Data;
-using SEG.Email;
-using SEG.WebAPI.Core.Identidade;
+using Email;
+using WebAPI.Core.Identidade;
 
 namespace Cliente.API.Configuration
 {
@@ -46,9 +46,9 @@ namespace Cliente.API.Configuration
 
         public static void UseApiConfiguration(this IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
-            //if (env.IsDevelopment())app.UseDeveloperExceptionPage();
-            //else 
-                app.UseGlobalErroHandler(loggerFactory);
+            if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
+            else app.UseGlobalErroHandler(loggerFactory);
+
 
             app.UseHttpsRedirection();
 

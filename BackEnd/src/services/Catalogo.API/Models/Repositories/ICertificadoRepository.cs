@@ -1,8 +1,5 @@
-﻿using SEG.Core.Data;
-using Catalogo.API.Controllers;
-using Catalogo.API.Models.Entities;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using Catalogo.API.Models.Entities;
+using Core.Data;
 
 namespace Catalogo.API.Models.Repositories
 {

@@ -9,6 +9,7 @@ using Bff.Web.Configuration.Configuration;
 using Bff.Web.Extensions;
 using WebAPI.Core.Identidade;
 using System.Text.Json.Serialization;
+using Microsoft.ApplicationInsights.DependencyCollector;
 
 namespace Bff.Web
 {
@@ -69,14 +70,20 @@ namespace Bff.Web
 
             services.AddMessageBusConfiguration(Configuration);
 
+            services.AddApplicationInsightsTelemetry(Configuration)
+                .ConfigureTelemetryModule<DependencyTrackingTelemetryModule>((module, o) =>
+                {
+                    module.EnableSqlCommandTextInstrumentation= true;
+                    //module.EnableLegacyCorrelationHeadersInjection= true;
+                });
+
             
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.UseMiddleware<RequestLoggingMiddleware>();
+            //app.UseMiddleware<RequestLoggingMiddleware>();
             app.UseSwaggerConfiguration();
-
             app.UseApiConfiguration(env, loggerFactory);
         }
     }

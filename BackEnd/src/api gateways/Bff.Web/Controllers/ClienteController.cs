@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Mime;
 using System.Threading.Tasks;
+using System;
 
 namespace Bff.Web.Controllers
 {
@@ -35,17 +36,14 @@ namespace Bff.Web.Controllers
             [SwaggerParameter(Required = true)]
             int produto)
         {
+            return new Random().Next(0, 6) switch
+            {
+                //0 => throw new Exception("Aconteceu um erro inesperado no sistema. Sua solicitação não foi processada por um erro interno"),
+                //1 => throw new ApplicationException("Erro na aplicação"),
+                _ => CustomResponse("Processado com sucesso!")
+            } ;
 
-            var response = await _clienteService.Obter(new DTO.GerarParcelaDTO());
-            AdicionarErroProcessamento(response);
-
-            if (response.Status == (int)HttpStatusCode.NotFound)
-                return NotFound(response.Errors.Mensagens[0]);
-
-            if (!OperacaoValida()) return CustomResponse();
-
-            return CustomResponse(response.ObterResponseObject<List<ContratoEmpresaDTO>>());
-
+            
         }
 
     }

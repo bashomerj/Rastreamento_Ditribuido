@@ -9,6 +9,7 @@ using Cliente.API.Automapper;
 using Cliente.API.Data;
 using Email;
 using WebAPI.Core.Identidade;
+using Microsoft.ApplicationInsights.DependencyCollector;
 
 namespace Cliente.API.Configuration
 {
@@ -42,6 +43,13 @@ namespace Cliente.API.Configuration
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddAutoMapper(typeof(AutomapperSetup));
+
+            services.AddApplicationInsightsTelemetry(configuration)
+            .ConfigureTelemetryModule<DependencyTrackingTelemetryModule>((module, o) =>
+            {
+                module.EnableSqlCommandTextInstrumentation = true;
+                //module.EnableLegacyCorrelationHeadersInjection= true;
+            });
         }
 
         public static void UseApiConfiguration(this IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
@@ -49,8 +57,16 @@ namespace Cliente.API.Configuration
             if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
             else app.UseGlobalErroHandler(loggerFactory);
 
-
             app.UseHttpsRedirection();
+
+            //Localization
+            var culturas = new[] { "pt-BR" };
+            var localizationOptions = new RequestLocalizationOptions()
+                .SetDefaultCulture(culturas[0])
+                .AddSupportedCultures(culturas)
+                .AddSupportedUICultures(culturas);
+
+            app.UseRequestLocalization(localizationOptions);
 
             app.UseRouting();
 
@@ -62,6 +78,13 @@ namespace Cliente.API.Configuration
             {
                 endpoints.MapControllers();
             });
+
+
+        
+
+
+
+
         }
     }
 }

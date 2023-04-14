@@ -64,7 +64,6 @@ namespace Bff.Web.Configuration
 
             app.UseRequestLocalization(localizationOptions);
 
-
             app.UseRouting();
 
             app.UseCors("Total");

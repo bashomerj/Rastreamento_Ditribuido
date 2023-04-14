@@ -10,6 +10,7 @@ using Catalogo.API.Automapper;
 using Catalogo.API.Data;
 using Catalogo.API.Extensions;
 using WebAPI.Core.Identidade;
+using Microsoft.ApplicationInsights.DependencyCollector;
 
 namespace Catalogo.API.Configuration
 {
@@ -42,6 +43,14 @@ namespace Catalogo.API.Configuration
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddAutoMapper(typeof(AutomapperSetup));
+
+
+            services.AddApplicationInsightsTelemetry(configuration)
+            .ConfigureTelemetryModule<DependencyTrackingTelemetryModule>((module, o) =>
+            {
+                module.EnableSqlCommandTextInstrumentation = true;
+                //module.EnableLegacyCorrelationHeadersInjection= true;
+            });
         }
 
         public static void UseApiConfiguration(this IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
@@ -50,6 +59,15 @@ namespace Catalogo.API.Configuration
             else app.UseGlobalErroHandler(loggerFactory);
 
             app.UseHttpsRedirection();
+
+            //Localization
+            var culturas = new[] { "pt-BR" };
+            var localizationOptions = new RequestLocalizationOptions()
+                .SetDefaultCulture(culturas[0])
+                .AddSupportedCultures(culturas)
+                .AddSupportedUICultures(culturas);
+
+            app.UseRequestLocalization(localizationOptions);
 
             app.UseRouting();
 
@@ -61,6 +79,9 @@ namespace Catalogo.API.Configuration
             {
                 endpoints.MapControllers();
             });
+
         }
+
+
     }
 }

@@ -24,13 +24,13 @@ namespace Bff.Web.Controllers
 {
     [Route("api/v1/catalogo")]
     [ApiController]
-    public class PropostaController : MainController
+    public class CatalogoController : MainController
     {
         private readonly ICatalogoService _catalogoService;
         private readonly IMapper _mapper;
         private readonly IMessageBus _bus;
 
-        public PropostaController(ICatalogoService catalogoService, IMapper mapper, IMessageBus bus)
+        public CatalogoController(ICatalogoService catalogoService, IMapper mapper, IMessageBus bus)
         {
             _catalogoService = catalogoService;
             _mapper = mapper;
